@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+
+  background: #fafafa;
+  color: #111;
+}
+
+.back-to-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+
+  width: 46px;
+  height: 46px;
+
+  background-color: #7a8f82;
+  color: white;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  text-decoration: none;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.back-to-top-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
