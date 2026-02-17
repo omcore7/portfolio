@@ -52,7 +52,7 @@ export default function Contact() {
       <div className="contact-header">
         <p className="contact-eyebrow">CONTACT</p>
         <h2 className="contact-title">Let’s Connect</h2>
-        <p className="projects-subtitle">
+        <p className="contact-subtitle">
           I'm currently looking for internship opportunities and I'd love to chat!
         </p>
       </div>
