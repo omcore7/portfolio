@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 
 import leftFlowers from "../assets/flowers-left.png"
 import rightFlowers from "../assets/flowers-right.png"
+import profileImage from "../assets/profile-portfolio.png"
 
 function Home() {
   return (
@@ -77,26 +78,30 @@ function Home() {
           </div>
         </motion.section>
 
-        {/* RIGHT SIDE */}
+       {/* RIGHT SIDE */}
 
-        <motion.div
-          className="hero-image-container"
-          initial={{ x: 70, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.35,
-          }}
-        >
-          <div className="profile-card">
-            <p className="image-placeholder">
-              Your Picture Here
-            </p>
-          </div>
-        </motion.div>
-      </div>
-    </motion.main>
-  )
+<motion.div
+  className="hero-image-container"
+  initial={{ x: 70, opacity: 0 }}
+  animate={{ x: 0, opacity: 1 }}
+  transition={{
+    duration: 0.8,
+    delay: 0.35,
+  }}
+>
+  <div className="profile-card">
+    <img
+      src={profileImage}
+      alt="Chelsea Ochoa Mata"
+      className="profile-picture"
+    />
+  </div>
+</motion.div>
+
+</div>
+
+</motion.main>
+)
 }
 
 export default Home
