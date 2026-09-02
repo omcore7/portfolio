@@ -1,0 +1,22 @@
+.home-page { position:relative; overflow:hidden; isolation:isolate; display:flex; align-items:center; padding-top:7rem; padding-bottom:0; }
+.home-page::before { content:""; position:absolute; inset:0; z-index:-3; background:radial-gradient(circle at 11% 33%,rgba(46,173,170,.12),transparent 31%),radial-gradient(circle at 77% 54%,rgba(57,134,148,.05),transparent 27%); pointer-events:none; }
+.home-page .hero-layout { position:relative; z-index:2; width:100%; max-width:1200px; margin:auto; display:grid; grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr); align-items:center; gap:clamp(3rem,6vw,6rem); }
+.hero-content { position:relative; z-index:3; min-width:0; }
+.home-page .hero-intro { margin:0 0 1.5rem; color:#4fd1c5; font-size:1.1rem; font-weight:600; }
+.home-page .hero-title { margin:0; color:#f8fafc; font:700 clamp(3.5rem,5vw,5.5rem)/1.1 "Poppins",sans-serif; letter-spacing:-.055em; white-space:nowrap; }
+.home-page .hero-subtitle { margin:2rem 0 0; color:#d1dbe7; font-size:clamp(1.35rem,2vw,1.8rem); font-weight:400; }
+.home-page .hero-description { max-width:690px; margin-top:3.2rem; color:#9aafc7; font-size:1.05rem; line-height:1.9; }
+.home-page .hero-buttons { display:flex; gap:1.3rem; margin-top:2.7rem; }
+.home-page .primary-button,.home-page .secondary-button { min-width:180px; }
+.home-page .primary-button { background:linear-gradient(110deg,#49cbc5,#52d2c9); box-shadow:0 12px 32px rgba(79,209,197,.15); }
+.home-page .secondary-button { background:rgba(7,17,26,.25); border-color:rgba(255,255,255,.12); }
+.home-page .hero-image-container { position:relative; z-index:3; display:flex; justify-content:center; }
+.home-page .profile-card { position:relative; z-index:3; width:320px; height:420px; padding:4px; overflow:hidden; display:flex; align-items:center; justify-content:center; color:#64748b; border:1px solid rgba(110,219,212,.45); border-radius:2rem; background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(21,37,47,.72)); box-shadow:0 0 18px rgba(79,209,197,.14),0 0 52px rgba(79,209,197,.11),0 25px 65px rgba(0,0,0,.32); }
+.profile-image { width:100%; height:100%; display:block; object-fit:cover; object-position:center; border-radius:calc(2rem - 5px); }
+.home-flowers { position:absolute; z-index:1; display:block; object-fit:contain; object-position:bottom; pointer-events:none; user-select:none; }
+.home-flowers-left { width:220px; height:320px; left:-12px; bottom:0; opacity:.56; filter:brightness(1.45) saturate(.85); }
+.home-flowers-right { width:235px; height:390px; right:-15px; bottom:0; opacity:.44; filter:brightness(1.2) saturate(.85); }
+.home-page + .footer { margin-top:0; }
+@media (max-width:1100px) { .home-page .hero-title { white-space:normal; font-size:clamp(3.4rem,6vw,4.6rem); } }
+@media (max-width:900px) { .home-page { display:block; padding:7.5rem 1.5rem 4rem; } .home-page .hero-layout { grid-template-columns:1fr; gap:3.5rem; text-align:center; } .home-page .hero-description{margin:2.5rem auto 0} .home-page .hero-buttons{justify-content:center} .home-page .hero-image-container{grid-row:1} .home-flowers-left{width:170px;height:260px;opacity:.42} .home-flowers-right{width:180px;height:300px;opacity:.34} }
+@media (max-width:520px) { .home-page { padding:6.8rem 1.15rem 3rem; } .home-page .hero-layout{gap:2.5rem} .home-page .profile-card{width:min(280px,78vw);height:360px} .home-page .hero-intro{margin-bottom:1rem} .home-page .hero-title{font-size:clamp(2.65rem,13vw,3.25rem);line-height:1.05} .home-page .hero-subtitle{margin-top:1.35rem;font-size:1.2rem;line-height:1.45} .home-page .hero-description{margin-top:2rem;font-size:.96rem;line-height:1.75} .home-page .hero-buttons{flex-direction:column;gap:.85rem;margin-top:2rem} .home-page .primary-button,.home-page .secondary-button{width:100%;min-width:0} .home-flowers-left{width:125px;height:210px;left:-35px;opacity:.32} .home-flowers-right{width:135px;height:230px;right:-40px;opacity:.28} }

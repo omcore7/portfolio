@@ -1,0 +1,16 @@
+:root { font-family: "Inter", sans-serif; color: #fff; background: #07111a; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; overflow-x: hidden; background-color: #07111a; background-image: radial-gradient(circle at top left, rgba(79,209,197,.12), transparent 35%), radial-gradient(circle at bottom right, rgba(79,209,197,.08), transparent 30%); }
+button, input, textarea { font: inherit; }
+a { color: inherit; }
+img { max-width: 100%; }
+.page-container { min-height: 100vh; padding: 8rem 2.5rem 4rem; }
+.primary-button, .secondary-button { display: inline-flex; align-items: center; justify-content: center; padding: 1rem 1.8rem; border-radius: 1rem; font-weight: 600; text-decoration: none; cursor: pointer; transition: .3s; }
+.primary-button { color: #000; background: #4fd1c5; border: 0; }
+.primary-button:hover { background: #81e6d9; transform: translateY(-3px); }
+.secondary-button { color: #fff; background: transparent; border: 1px solid rgba(255,255,255,.1); }
+.secondary-button:hover { color: #4fd1c5; border-color: #4fd1c5; transform: translateY(-3px); }
+.title-line { width: 108px; height: 18px; margin: 1.55rem auto 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 18'%3E%3Cpath d='M2 9 C18 3 31 3 49 9 C66 15 80 15 98 9' fill='none' stroke='%234FD1C5' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat; }
+@media (max-width:700px) { .page-container { padding-inline: 1.25rem; } }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation:none!important; transition:none!important; } }

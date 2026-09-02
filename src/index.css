@@ -1,0 +1,10 @@
+@import "@fontsource/inter";
+@import "@fontsource/poppins";
+@import "tailwindcss";
+@import "./styles/base.css";
+@import "./styles/navbar.css";
+@import "./styles/home.css";
+@import "./styles/projects.css";
+@import "./styles/contact.css";
+@import "./styles/footer.css";
+@import "./styles/toast.css";

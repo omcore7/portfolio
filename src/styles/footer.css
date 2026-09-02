@@ -1,0 +1,11 @@
+.footer { margin-top:5rem; padding:3rem 2rem; background:rgba(7,17,26,.7); border-top:1px solid rgba(255,255,255,.06); backdrop-filter:blur(12px); }
+.footer-content { max-width:1200px; margin:auto; text-align:center; }
+.footer-logo { margin:0; color:#fff; font:700 1.7rem "Poppins",sans-serif; }
+.footer-wave { width:75px; height:14px; margin:.7rem auto 1.2rem; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 18'%3E%3Cpath d='M2 9 C18 3 31 3 49 9 C66 15 80 15 98 9' fill='none' stroke='%234FD1C5' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat; }
+.footer-text { margin:0 0 1.8rem; color:#94a3b8; line-height:1.7; }
+.footer-socials { display:flex; justify-content:center; gap:1.5rem; margin-bottom:1.8rem; }
+.footer-socials a { width:50px; height:50px; display:flex; align-items:center; justify-content:center; color:#fff; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); border-radius:50%; transition:.3s; }
+.footer-socials a:hover { transform:translateY(-5px); color:#4fd1c5; border-color:rgba(79,209,197,.5); box-shadow:0 0 20px rgba(79,209,197,.2); }
+.footer-socials a svg { font-size:1.2rem; }
+.copyright { margin:0; color:#64748b; font-size:.9rem; }
+@media (max-width:600px) { .footer{margin-top:3rem;padding:2.5rem 1rem}.footer-logo{font-size:1.4rem}.footer-text{max-width:300px;margin:0 auto 1.5rem;font-size:.9rem}.footer-socials{gap:1rem;margin-bottom:1.5rem}.footer-socials a{width:44px;height:44px}.copyright{font-size:.78rem;line-height:1.6} }

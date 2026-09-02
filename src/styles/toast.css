@@ -1,0 +1,6 @@
+.Toastify__toast { padding:1rem 1.2rem; color:#fff!important; background:rgba(15,23,42,.95)!important; border:1px solid rgba(79,209,197,.2); border-radius:18px!important; box-shadow:0 0 25px rgba(79,209,197,.15); backdrop-filter:blur(12px); font-family:"Inter",sans-serif; }
+.Toastify__toast--success { border-left:4px solid #4fd1c5; }
+.Toastify__toast--error { border-left:4px solid #ef4444; }
+.Toastify__toast-body { font-size:.95rem; font-weight:500; }
+.Toastify__close-button { color:#cbd5e1!important; }
+@media (max-width:768px) { .Toastify__toast-container { width:90vw; left:50%; transform:translateX(-50%); } }
