@@ -24,7 +24,7 @@ function Footer() {
         <div className="footer-socials">
 
           <a
-            href="YOUR_GITHUB_LINK"
+            href="https://github.com/omcore7"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -33,7 +33,7 @@ function Footer() {
           </a>
 
           <a
-            href="YOUR_LINKEDIN_LINK"
+            href="https://www.linkedin.com/in/chelsea-ochoa/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -42,7 +42,7 @@ function Footer() {
           </a>
 
           <a
-            href="mailto:YOUR_EMAIL"
+            href="mailto:om.core78@gmail.com"
             aria-label="Email Chelsea"
           >
             <MdEmail />
