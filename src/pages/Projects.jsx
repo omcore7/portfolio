@@ -8,6 +8,9 @@ import {
 
 import projectsFlowersLeft from "../assets/projects-flowers-left.png"
 import projectsFlowersRight from "../assets/projects-flowers-right.png"
+import portfolioPreview from "../assets/portfolio-preview.png"
+import reptrackPreview from "../assets/reptrack-preview.png"
+import custodialPreview from "../assets/custodial-preview.png"
 
 function Projects() {
   return (
@@ -54,19 +57,25 @@ function Projects() {
 
         {/* PROJECT CARD */}
 
+        {/* PERSONAL PORTFOLIO */}
+
         <article className="project-card">
 
           <div className="project-image">
-            Project Image
+            <img
+              src={portfolioPreview}
+              alt="Preview of Chelsea Ochoa Mata's personal portfolio"
+            />
           </div>
 
           <h2 className="project-title">
-            Mexican Bakery Website
+            Personal Portfolio
           </h2>
 
           <p className="project-text">
-            A responsive bakery website designed to showcase
-            products, company history, and modern UI design.
+            A responsive personal portfolio showcasing my projects,
+            technical skills, and contact information through a modern,
+            nature-inspired design.
           </p>
 
           <div className="project-tags">
@@ -76,11 +85,11 @@ function Projects() {
             </span>
 
             <span className="project-tag">
-              Tailwind
+              Framer Motion
             </span>
 
             <span className="project-tag">
-              JavaScript
+              EmailJS
             </span>
 
           </div>
@@ -88,15 +97,19 @@ function Projects() {
           <div className="project-links">
 
             <a
-              href="#"
+              href="https://github.com/omcore7/portfolio"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View portfolio source code on GitHub"
             >
               <FaGithub />
             </a>
 
             <a
-              href="#"
+              href="https://portfolio-wine-eight-b0mp38lajj.vercel.app/"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View live portfolio"
             >
               <FiExternalLink />
             </a>
@@ -105,7 +118,7 @@ function Projects() {
 
         </article>
 
-        {/* SECOND CARD */}
+        {/* REPTRACK */}
 
         <article className="project-card project-card-featured">
 
@@ -117,19 +130,27 @@ function Projects() {
           />
 
           <div className="project-image">
-            Project Image
+            <img
+              src={reptrackPreview}
+              alt="Preview of the RepTrack fitness tracking application"
+            />
           </div>
 
           <h2 className="project-title">
-            Health Tracker
+            RepTrack
           </h2>
 
           <p className="project-text">
-            Interactive webpage focused on health dimensions,
-            scriptures, and JavaScript interactivity.
+            A fitness tracking application that helps users organize
+            exercises, record workout progress, and keep track of their
+            training in one convenient place.
           </p>
 
           <div className="project-tags">
+
+            <span className="project-tag">
+              JavaScript
+            </span>
 
             <span className="project-tag">
               HTML
@@ -139,24 +160,24 @@ function Projects() {
               CSS
             </span>
 
-            <span className="project-tag">
-              JavaScript
-            </span>
-
           </div>
 
           <div className="project-links">
 
             <a
-              href="#"
+              href="https://github.com/omcore7/reptrack"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View RepTrack source code on GitHub"
             >
               <FaGithub />
             </a>
 
             <a
-              href="#"
+              href="https://omcore7.github.io/reptrack/"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View live RepTrack application"
             >
               <FiExternalLink />
             </a>
@@ -165,35 +186,39 @@ function Projects() {
 
         </article>
 
-        {/* THIRD CARD */}
+        {/* CUSTODIAL TEAM OPERATIONS SYSTEM */}
 
         <article className="project-card">
 
           <div className="project-image">
-            Project Image
+            <img
+              src={custodialPreview}
+              alt="Preview of the Custodial Team Operations System"
+            />
           </div>
 
           <h2 className="project-title">
-            Water Sensor System
+            Custodial Team Operations System
           </h2>
 
           <p className="project-text">
-            Water level detection project combining sensors,
-            electronics, and programming logic.
+            A role-based operations system designed to help supervisors
+            assign work areas, organize daily tasks, and monitor team
+            progress more efficiently.
           </p>
 
           <div className="project-tags">
 
             <span className="project-tag">
-              Arduino
+              React
             </span>
 
             <span className="project-tag">
-              IoT
+              Supabase
             </span>
 
             <span className="project-tag">
-              Hardware
+              Tailwind CSS
             </span>
 
           </div>
@@ -201,15 +226,19 @@ function Projects() {
           <div className="project-links">
 
             <a
-              href="#"
+              href="https://github.com/omcore7/custodial-team-operations"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View custodial system source code on GitHub"
             >
               <FaGithub />
             </a>
 
             <a
-              href="#"
+              href="https://custodial-team-operations.vercel.app/"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View live custodial operations system"
             >
               <FiExternalLink />
             </a>
