@@ -1,8 +1,10 @@
 import { useState } from "react"
 
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 
 import { HiMenu, HiX } from "react-icons/hi"
+
+
 
 function Navbar() {
 
@@ -16,9 +18,16 @@ function Navbar() {
 
         {/* LOGO */}
 
-        <h1 className="logo">
-          COM
-        </h1>
+        <Link
+          to="/"
+          className="logo-link"
+          aria-label="Go to home page"
+          onClick={() => setMenuOpen(false)}
+        >
+          <h1 className="logo">
+            COM
+          </h1>
+        </Link>
 
         {/* DESKTOP LINKS */}
 
