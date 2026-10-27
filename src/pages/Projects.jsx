@@ -11,6 +11,7 @@ import projectsFlowersRight from "../assets/projects-flowers-right.png"
 import portfolioPreview from "../assets/portfolio-preview.png"
 import reptrackPreview from "../assets/reptrack-preview.png"
 import custodialPreview from "../assets/custodial-preview.png"
+import shinoPreview from "../assets/shino-preview.png"
 
 function Projects() {
   return (
@@ -239,6 +240,67 @@ function Projects() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View live custodial operations system"
+            >
+              <FiExternalLink />
+            </a>
+
+          </div>
+
+        </article>
+
+        {/* SHINO HOSPITALITY CLEANING SERVICES */}
+
+        <article className="project-card">
+
+          <div className="project-image">
+            <img
+              src={shinoPreview}
+              alt="Preview of the Shino Hospitality Cleaning Services website"
+            />
+          </div>
+
+          <h2 className="project-title">
+            Shino Hospitality Cleaning Services
+          </h2>
+
+          <p className="project-text">
+            A responsive business website created for a hospitality cleaning
+            company. It presents the company’s services and includes a working
+            request-a-quote form connected through Netlify.
+          </p>
+
+          <div className="project-tags">
+
+            <span className="project-tag">
+              Astro
+            </span>
+
+            <span className="project-tag">
+              JavaScript
+            </span>
+
+            <span className="project-tag">
+              Netlify
+            </span>
+
+          </div>
+
+          <div className="project-links">
+
+            <a
+              href="https://github.com/omcore7/shino-website"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Shino website source code on GitHub"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+              href="https://shinocleaning.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View the live Shino Hospitality Cleaning Services website"
             >
               <FiExternalLink />
             </a>
